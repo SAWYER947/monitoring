@@ -1,0 +1,14 @@
+{
+  "name": "bluehaven-network-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node --watch server/index.mjs",
+    "check": "node --check server/index.mjs && node --check server/api.mjs && node --check server/security.mjs && node --check server/store.mjs && node --check server/providers/index.mjs && node --check server/providers/demo.mjs && node --check public/app.js"
+  }
+}
